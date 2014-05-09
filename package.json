@@ -1,0 +1,11 @@
+{
+  "name": "node-latex",
+  "version": "0.0.1",
+  "description": "A LaTeX library for Node.js",
+  "main": "latex.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT"
+}
