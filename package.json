@@ -1,13 +1,18 @@
 {
-  "name": "node-latex",
-  "version": "0.0.1",
-  "description": "A LaTeX library for Node.js",
-  "main": "latex.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-  }
+    "name": "node-latex",
+    "version": "0.0.1",
+    "private": true,
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/oyvindrobertsen/node-latex.git"
+    },
+    "description": "A LaTeX library for Node.js",
+    "main": "latex.js",
+    "scripts": {
+        "test": "mocha"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+    }
 }
