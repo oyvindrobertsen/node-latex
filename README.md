@@ -2,4 +2,4 @@
 
 A simple LaTeX library for Node.js supporting multiple compilers (defaulting to `rubber`) and references, images, etc.
 
-Uses `nodeunit` for tests.
+Uses `mocha` for tests.

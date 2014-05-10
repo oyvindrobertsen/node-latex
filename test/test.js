@@ -1,4 +1,4 @@
-var lt = require('./latex'),
+var lt = require('../latex'),
     assert = require('assert');
 
 var path = __dirname + '/testfiles/test.tex';
