@@ -17,4 +17,4 @@ exports.compile = function(path, callback) {
             }
         });
     });
-}
+};
