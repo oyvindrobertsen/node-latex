@@ -3,7 +3,7 @@ var spawn   = require('child_process').spawn,
 
 exports.compile = function(path, callback) {
     //Naïve, insecure version
-    var comp = spawn('rubber', ['--pdf', 'test.tex'], {cwd: 'test/', env: process.env});
+    var comp = spawn('rubber', ['--pdf', path], {cwd: 'test/', env: process.env});
     comp.on('error', function(err) {
         callback(err);
     });
@@ -12,9 +12,7 @@ exports.compile = function(path, callback) {
             if (!exists) {
                 callback('Unable to compile');
             }
-            else {
-                callback();
-            }
+            callback();
         });
     });
 };

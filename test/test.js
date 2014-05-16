@@ -21,10 +21,13 @@ var removeTexCompiledFiles = function() {
     });
 };
 
-describe('#compile', function() {
-    before(removeTexCompiledFiles);
-    it('should compile our latex file', function(done) {
-        lt.compile(path, done);
+describe('LaTeX', function() {
+    describe('#compile', function() {
+        before(removeTexCompiledFiles);
+        it('should compile our latex file', function(done) {
+            lt.compile(path, done);
+        });
+        after(removeTexCompiledFiles);
     });
-    after(removeTexCompiledFiles);
 });
+

@@ -9,7 +9,7 @@
     "description": "A LaTeX library for Node.js",
     "main": "latex.js",
     "scripts": {
-        "test": "mocha -R nyan"
+        "test": "mocha -R list"
     },
     "author": "",
     "license": "MIT",
