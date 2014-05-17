@@ -14,5 +14,8 @@
     "author": "",
     "license": "MIT",
     "dependencies": {
+    },
+    "devDependencies": {
+        "mocha": "~1.18.2"
     }
 }
