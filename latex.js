@@ -19,7 +19,7 @@ exports.optionsFactory = function(args) {
         var i = 0;
         for (;i < args.length; i++) {
             var arg = args[i];
-            switch(args) {
+            switch(arg) {
                 case 'rubber':
                     o.compiler = CompilerEnum.rubber;
                     break;

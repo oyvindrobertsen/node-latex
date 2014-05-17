@@ -32,10 +32,8 @@ describe('LaTeX', function() {
     describe('#compile', function() {
         before(removeTexCompiledFiles);
         it('should accept an options object', function(done) {
-            var opts = {
-                path: texPath,
-                compiler: 'rubber'
-            };
+            var opts = lt.optionsFactory(['rubber']);
+            opts.path = texPath;
             lt.compile(opts, done);
         });
     });
