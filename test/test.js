@@ -30,11 +30,11 @@ describe('LaTeX', function() {
         after(removeTexCompiledFiles);
     });
     describe('#compile', function() {
-        before(removeTexCompiledFiles);
         it('should accept an options object', function(done) {
             var opts = lt.optionsFactory(['rubber']);
             opts.path = texPath;
             lt.compile(opts, done);
         });
+        after(removeTexCompiledFiles);
     });
 });
