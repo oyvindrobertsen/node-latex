@@ -3,7 +3,7 @@ var assert = require('assert'),
     fs = require('fs');
 
 
-var path = __dirname + '/test.tex';
+var texPath = __dirname + '/test.tex';
 
 var removeTexCompiledFiles = function() {
     fs.exists(__dirname + '/test.pdf', function(exists) {
@@ -25,9 +25,18 @@ describe('LaTeX', function() {
     describe('#compile', function() {
         before(removeTexCompiledFiles);
         it('should compile our latex file', function(done) {
-            lt.compile(path, done);
+            lt.compile(texPath, done);
         });
         after(removeTexCompiledFiles);
     });
+    describe('#compile', function() {
+        before(removeTexCompiledFiles);
+        it('should accept an options object', function(done) {
+            var opts = {
+                path: texPath,
+                compiler: 'rubber'
+            };
+            lt.compile(opts, done);
+        });
+    });
 });
-
